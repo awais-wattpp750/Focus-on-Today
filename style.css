@@ -1,0 +1,326 @@
+body{
+background-color:#48A30012;
+font-family: "Poppins", sans-serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --heading-color: green;
+ 
+     --font-weight: 700;
+     --font-size-for-heading: 2.4rem;
+     --fon-size-for-sub-heading:2rem;
+     --rainse-bar-text-color:#858585;
+     --bar-font-weight:400;
+     --font-weight-for-goal-text:500;
+     --bar-background-color:#48A3001A;
+     --goal-text-color:#D9D9D9;
+     --goal-back-ground-color:#FFFFFF;
+    
+}
+
+h1{
+    text-align: center;
+    font-weight: var(--font-weight);
+    word-spacing: 3px;
+    font-size: var(--font-size-for-heading);
+    margin-top: 2rem;
+}
+h1 span{
+    color: var(--heading-color);
+    margin-inline: auto;    
+}
+.original-data{
+    background-color:#FBFBFB;
+    
+    margin-inline: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1.4rem;
+    box-shadow: 0 0 10px var(--goal-text-color);
+    padding-inline: 2rem;
+    --font-size-14: 0.7rem;
+    --font-size-16: 1rem;
+    padding-block: 2rem;
+}
+
+.today-and-star{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: var(--font-weight);
+    font-size: var(--fon-size-for-sub-heading);
+}
+.today-and-star{
+    padding-top: 1.5rem;
+}
+.bar-and-text-dicv{
+margin-top: 3.4rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 2rem;
+}
+.bar-and-text-dicv p{
+    font-weight: var(--bar-font-weight);
+    color: #858585;
+    font-family: var(--font-size-14);
+    
+}
+
+    .progressbar{
+        width: 100%;
+    height: 30px;
+    border-radius: 10px;
+     background-color: var(--bar-background-color);
+    }
+    .progress-value{
+     width: 0%;
+     height: 100%;
+    border-radius: 10px;
+     background-color: green;
+     transition: all 1s ease;
+     
+    
+    }
+
+
+   
+    .add-goal-paren{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .error{
+        color: red;
+
+    }
+    .add-goal p{
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+    }
+        .add-goal{
+            background-color: #FFFFFF;
+        }
+        .first-goal{
+           background-color: wheat;
+            height: 60px;
+            border-radius: 1rem;
+            padding-inline: 1rem;
+            display: flex;
+            align-items: center;
+            gap:0.6rem;
+            background-color: var(--goal-back-ground-color);
+            box-shadow: 0 0 2px black;
+            line-height: 100%;
+        }
+        .first-goal input{
+          width: 100%;
+            /* height: 100%; */
+            border: none;
+            outline: none;
+            align-self: stretch;
+            
+                    
+        }
+       
+        input::placeholder {
+        color: var(--goal-text-color);
+        font-weight: 500;
+        padding-left: 0.2rem;
+        font-size: 0.1rem;
+           }
+    .chose-goal{
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+       border: 1px solid #61481C4D;
+       background-color: green;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-shrink: 0;
+       cursor: pointer;
+    }
+
+    .first-goal span{
+        font-weight: var(--font-weight-for-goal-text);
+        color: var(--goal-text-color);
+        font-size: var(--font-size-16);
+    
+    }
+
+
+    .move-on-step{
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-for-goal-text);
+        color: black;
+        line-height: 100%;
+        margin-top: 3rem;
+        margin-inline: auto;
+        text-align: center;
+    
+    }
+
+
+    .tick-img{
+        display: none;
+    }
+
+    .completed .tick-img{
+        display: block;
+    }
+    .completed input{
+        font-weight: 500;
+        color: green;
+        font-size: 2rem;
+        text-decoration-line:line-through ;
+    }
+
+    .add-goal p{
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    }
+
+
+    .add-goal p.show{
+        opacity: 1;
+        
+    }
+
+    .add-goal p.hide{
+        opacity: 0;
+    }
+
+
+    @media(max-width:510px){
+        .bar-and-text-dicv p{
+            font-size: 0.7rem;
+        }
+
+        h1{
+            font-size: 1.6rem;
+        }
+
+        .move-on-step{
+            font-size: 0.7rem;
+        }
+          input::placeholder{
+            font-size: 1rem;
+            
+
+
+        }
+        .first-goal{
+            height: 50px;
+        }
+    }
+    @media(max-width:420px){
+        .bar-and-text-dicv p{
+            font-size: 0.4rem;
+        }
+
+        h1{
+            font-size: 1.3rem;
+        }
+
+        .move-on-step{
+            font-size: 0.6rem;
+        }
+        .add-goal p{
+            font-size: 0.5rem;
+        }
+        
+        input::placeholder{
+            font-size: 1rem;
+            
+
+
+        }
+
+        .first-goal{
+
+            padding-block: 0.5rem;
+            gap:0.2rem;
+            height: 30px;
+        }
+
+        .add-goal-paren{
+            gap: 1rem;
+        }
+        .today-and-star{
+            padding-top: .3rem;
+        }
+        .bar-and-text-dicv{
+            margin-top: 0.6rem;
+        }
+
+        .original-data{
+            margin-top:1rem;
+        }
+
+        .first-goal{
+            padding-left: 0.4rem;
+        }
+        .chose-goal{
+            width: 15px;
+            height: 15px;
+        }
+      
+    }
+
+@media (min-width: 511px) and (max-width: 767px) {
+    input::placeholder {
+        font-size: 1rem;
+    }
+}
+
+    /* for tablet moible */
+
+    @media(min-width:768px){
+        h1{
+            font-size: 3rem;
+        }
+        .bar-and-text-dicv p{
+            font-size: 1rem;
+        }
+
+        input::placeholder{
+            font-size: 1.7rem;
+        }
+        .add-goal p{
+            font-size: 1.3rem;
+        }
+
+        .bar-and-text-dicv p{
+            font-size: 1.2rem;
+        }
+    }
+    @media(min-width:1024px){
+        h1{
+            font-size: 4rem;
+        }
+        .bar-and-text-dicv p{
+            font-size: 2rem;
+        }
+
+        input::placeholder{
+            font-size: 1rem;
+        }
+        .add-goal p{
+            font-size: 2rem;
+        }
+
+        .bar-and-text-dicv p{
+            font-size: 1.2rem;
+        }
+    }
+  
+    
