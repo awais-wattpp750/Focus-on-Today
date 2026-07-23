@@ -38,7 +38,7 @@ h1 span{
 }
 .original-data{
     background-color:#FBFBFB;
-    
+
     margin-inline: 1rem;
     border-radius: 0.5rem;
     margin-top: 1.4rem;
@@ -123,7 +123,7 @@ gap: 2rem;
         }
         .first-goal input{
           width: 100%;
-            /* height: 100%; */
+           
             border: none;
             outline: none;
             align-self: stretch;
@@ -135,7 +135,7 @@ gap: 2rem;
         color: var(--goal-text-color);
         font-weight: 500;
         padding-left: 0.2rem;
-        font-size: 0.1rem;
+        font-size: 1rem;
            }
     .chose-goal{
         width: 20px;
@@ -200,39 +200,12 @@ gap: 2rem;
     }
 
 
-    @media(max-width:510px){
-        .bar-and-text-dicv p{
-            font-size: 0.7rem;
-        }
+    @media(max-width:320px){
 
-        h1{
-            font-size: 1.6rem;
-        }
+
 
         .move-on-step{
-            font-size: 0.7rem;
-        }
-          input::placeholder{
             font-size: 1rem;
-            
-
-
-        }
-        .first-goal{
-            height: 50px;
-        }
-    }
-    @media(max-width:420px){
-        .bar-and-text-dicv p{
-            font-size: 0.4rem;
-        }
-
-        h1{
-            font-size: 1.3rem;
-        }
-
-        .move-on-step{
-            font-size: 0.6rem;
         }
         .add-goal p{
             font-size: 0.5rem;
@@ -240,40 +213,58 @@ gap: 2rem;
         
         input::placeholder{
             font-size: 1rem;
-            
+            text-align: center;
 
 
         }
 
         .first-goal{
 
-            padding-block: 0.5rem;
+           
             gap:0.2rem;
-            height: 30px;
+            height: 60px;
+            padding-left: 0.4rem;
+            margin-top: 2rem;
+            display: flex;
+            gap: 0.7rem;
+            padding-inline: 1rem;
+
         }
 
         .add-goal-paren{
-            gap: 1rem;
+            gap: 2rem;
+            margin-block: 3rem;
+           
         }
         .today-and-star{
-            padding-top: .3rem;
+            padding-top: 1.5rem;
+            
         }
         .bar-and-text-dicv{
-            margin-top: 0.6rem;
+             margin-top: 3rem;
+             font-size: 2rem;
+            
         }
 
         .original-data{
             margin-top:1rem;
+           
         }
 
-        .first-goal{
-            padding-left: 0.4rem;
-        }
+        
         .chose-goal{
-            width: 15px;
-            height: 15px;
+            width: 20px;
+            height: 20px;
+           
         }
-      
+        .bar-and-text-dicv p {
+        font-size: 1rem;
+    }
+      h1{
+        font-size: 1.7rem;
+      }
+
+    
     }
 
 @media (min-width: 511px) and (max-width: 767px) {
